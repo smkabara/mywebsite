@@ -1,0 +1,296 @@
+<!-- This tells the browser the page is html document. -->
+<!DOCTYPE html>
+<!-- This tells the browser the page is in English -->
+<html lang="en">
+<!-- This defines the encoding used for the page -->
+
+<head>
+    <!-- This defines the encoding used for the page -->
+    <meta charset="utf-8" />
+    <!--This prevents caching over secured connections.  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- This describes the website for SEO. -->
+    <meta name="description" content="Sameer's Personal Website" />
+    <!-- This describes the author of the website -->
+    <meta name=author content="Sameer M. Kabara" />
+    <!-- This defines the viewport making our site responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is the title of the site in the browser tab -->
+    <title>Sameer's Notes</title>
+    <!-- This is the icon that will be besides our page titles -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- This tells the browser to load the image on time -->
+    <link rel="preload" as="image" href="img/banner.jpg" />
+</head>
+<!-- This contains the content that is visible to users -->
+
+<body>
+    <!-- This tells the browser that the content here is a header -->
+    <header class="header" data-header>
+
+        <!-- This will wrap our navigation bar -->
+        <div class="headre" data-header>
+            <!-- Ths will wrap the navigation bar -->
+            <div class="container" data-header>
+                <!-- Thsi is for our logo -->
+                <a href="#" class="logo">Sameer</a>
+                <!-- This is for our navigation bar -->
+                <nav class="navbar-list">
+                    <!-- This wraps our items -->
+                    <ul class="navbar-list">
+                        <!-- These are all our navbar links -->
+                        <li><a href="#" class="navbar-link">home</a></li>
+                        <li><a href="#" class="navbar-link">Portfolio</a></li>
+                        <li><a href="#" class="navbar-link">Skills</a></li>
+                        <li><a href="#" class="navbar-link">Time</a></li>
+                        <li><a href="#" class="navbar-link">Pricing</a></li>
+                        <li><a href="#" class="navbar-link">Blog</a></li>
+                        <li><a href="#" class="navbar-link">Contact</a></li>
+
+                    </ul>
+                </nav>
+                <!-- This button to Toggle -->
+                <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggle>
+                    <!-- This spans the line for our hamburger button -->
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- START OF MAIN TAG-->
+    <main>
+        <!-- represents a unique portion of the document within the main tag -->
+        <article>
+
+            <!-- HERO -->
+            <section class="section hero" id="home" aria-label="hero">
+                <div class="container">
+                    <!-- This is a figure element for our image -->
+                    <figure class="hero-banner img-holder has before" style="width: 640; height:840;">
+                        <!-- This is our image banner -->
+                        <img src="img/banner6.jpg" width="640" height="840" alt="Sameer's Photo" class="img-cover">
+                    </figure>
+                    <!-- This is div for hero content -->
+                    <div class="hero-content">
+                        <p class="section-subtitle">Sameer M. Kabara</p>
+                        <h1 class="h1 hero-title">Software and ML Engineering</h1>
+
+                        <ul class="hero-list">
+                            <!-- LIST -->
+                            <li>
+                                <a href="#" class="list-link">
+                                    <span class="span">
+                                        Backend Development
+                                    </span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <!-- LIST -->
+                            <li>
+                                <a href="#" class="list-link">
+                                    <span class="span">
+                                        Backend Development
+                                    </span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <!-- LIST -->
+                            <li>
+                                <a href="#" class="list-link">
+                                    <span class="span">
+                                        Software Project Management
+                                    </span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+
+                            <!-- LIST -->
+                            <li>
+                                <a href="#" class="list-link">
+                                    <span class="span">
+                                        QUality Assurance and Testing
+                                    </span>
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- FOR EXPERIENCE LIST -->
+                        <ul class="experience">
+                            <!-- FOR List Items -->
+                            <li class="list-item">
+                                <strong class="strong">5+</strong>
+                                <span class="span">
+                                    years of<br />
+                                    Experience
+                                </span>
+
+                            </li>
+
+                            <!-- FOR List Items -->
+                            <li class="list-item">
+                                <strong class="strong">15+</strong>
+                                <span class="span">
+                                    Satisfied<br />
+                                    Clients
+                                </span>
+
+                            </li>
+
+
+                            <!-- End of list itenms -->
+                        </ul>
+
+                        <!-- Scroll Down Button -->
+                        <a href="#" class="slide-down-btn" aria-label="scroll-down">
+                            <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+
+                        </a>
+                    </div>
+            </section>
+            <!-- END OF THIS HERO SECTION -->
+
+
+            <!-- The Portfolio Section -->
+            <section class="section portfolio" id="portfolio" aria-label="portfolio">
+                <!-- This is the container for our portfolio section -->
+
+                <div class="container">
+                    <p class="section-subtitle">Portfolio</p>
+                    <!-- This is the section header -->
+                    <h2 class="h2 section-title">Selected Works</h2>
+                    <!-- This is the static scrollbar -->
+                    <ul class="has scrollbar">
+                        <li class="scrollbar-item">
+                            <!-- These are our cards -->
+                            <div class="card">
+
+                                <!-- figure inside in class -->
+
+                                <figure class="card-banner img-holder" style="width:600; height: 675;">
+                                    <!-- For Image in figure -->
+                                    <img src="img/sk1.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 1" />
+                                </figure>
+                            </div>
+                        </li>
+
+                        <!-- These are our cards -->
+                        <div class="card">
+
+                            <!-- figure inside in class -->
+
+                            <figure class="card-banner img-holder" style="width:600; height: 675;">
+                                <!-- For Image in figure -->
+                                <img src="img/sk2.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 2" />
+                            </figure>
+                        </div>
+                        </li> <!-- These are our cards -->
+                        <div class="card">
+
+                            <!-- figure inside in class -->
+
+                            <figure class="card-banner img-holder" style="width:600; height: 675;">
+                                <!-- For Image in figure -->
+                                <img src="img/sk3.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 3" />
+                            </figure>
+                        </div>
+                        </li> <!-- These are our cards -->
+                        <div class="card">
+
+                            <!-- figure inside in class -->
+
+                            <figure class="card-banner img-holder" style="width:600; height: 675;">
+                                <!-- For Image in figure -->
+                                <img src="img/sk4.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 4" />
+                            </figure>
+                        </div>
+                        </li> <!-- These are our cards -->
+                        <div class="card">
+
+                            <!-- figure inside in class -->
+
+                            <figure class="card-banner img-holder" style="width:600; height: 675;">
+                                <!-- For Image in figure -->
+                                <img src="img/5.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 5" />
+                            </figure>
+                        </div>
+                        </li> <!-- These are our cards -->
+                        <div class="card">
+
+                            <!-- figure inside in class -->
+
+                            <figure class="card-banner img-holder" style="width:600; height: 675;">
+                                <!-- For Image in figure -->
+                                <img src="img/6.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 6" />
+                            </figure>
+                        </div>
+                        </li>
+
+
+
+                </div>
+                </li>
+                </ul>
+                </div>
+            </section>
+            <!-- END OF PORTFOLIO -->
+            <!-- START OF SKILLS -->
+            <section class="section skills has before"
+            id="skills"
+            aria-label="skills"
+            style="background-image: url(img/skills.jpg)">
+            <div class="container">
+                <p class="section-subtitle">skills</p>
+                <h2 class="h2 section-title">Coding Skills</h2>
+                <p class="section-text">
+                    I have 5+ years in the full software development an emphasis on design, proper code patterns, scalability and performance.
+                </p>
+                <ul class="section-list">
+                    <li class="skills-item">
+                        <div class="wrapper">
+                            <h3 class="skill-title">HTML & CSS</h3>
+                            <data class="skill-value" value="95%">95%
+                            </data>
+                        </div>
+                        <div class="progress-box">
+                            <div class="progress"style=width: 95%></div>
+                        </div>
+                    </li>
+
+                    <li class="skills-item">
+                        <div class="wrapper">
+                            <h3 class="skill-title">HTML & CSS</h3>
+                            <data class="skill-value" value="95%">95%
+                            </data>
+                        </div>
+                        <div class="progress-box">
+                            <div class="progress"style=width: 95%></div>
+                        </div>
+                    </li>
+
+                    <li class="skills-item">
+                        <div class="wrapper">
+                            <h3 class="skill-title">HTML & CSS</h3>
+                            <data class="skill-value" value="80%">80%</data>
+                        </div>
+                        <div class="progress-box">
+                            <div class="progress"style=width: 80%></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-banner has-before"></div>
+             </div>
+        </section>
+        
+    </article>
+    </main>
+</body>
+</html>
