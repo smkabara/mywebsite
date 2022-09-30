@@ -28,40 +28,36 @@
 
 <body>
     <!-- This tells the browser that the content here is a header -->
-    <header class="header" data-header>
-
+       <!-- This tells the browser that the content here is a header -->
+       <header class="header" data-header>
         <!-- This will wrap our navigation bar -->
-        <div class="headre" data-header>
-            <!-- Ths will wrap the navigation bar -->
-            <div class="container" data-header>
-                <!-- Thsi is for our logo -->
-                <a href="#" class="logo">Sameer</a>
-                <!-- This is for our navigation bar -->
-                <nav class="navbar-list">
-                    <!-- This wraps our items -->
-                    <ul class="navbar-list">
-                        <!-- These are all our navbar links -->
-                        <li><a href="#" class="navbar-link">home</a></li>
-                        <li><a href="#" class="navbar-link">Portfolio</a></li>
-                        <li><a href="#" class="navbar-link">Skills</a></li>
-                        <li><a href="#" class="navbar-link">Time</a></li>
-                        <li><a href="#" class="navbar-link">Pricing</a></li>
-                        <li><a href="#" class="navbar-link">Blog</a></li>
-                        <li><a href="#" class="navbar-link">Contact</a></li>
-
-                    </ul>
-                </nav>
-                <!-- This button to Toggle -->
-                <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggle>
-                    <!-- This spans the line for our hamburger button -->
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
-            </div>
-
-    </header>
-    <!-- END OF HEADER -->
+        <div class="container">
+          <!-- This is for our logo -->
+          <a href="#" class="logo">Sameer</a>
+          <!-- This is for our navigation bar -->
+          <nav class="navbar" data-navbar>
+            <!--This wraps our items -->
+            <ul class="navbar-list">
+              <!-- These are all our navbar links -->
+              <li><a href="#" class="navbar-link">Home</a></li>
+              <li><a href="#" class="navbar-link">Portfolio</a></li>
+              <li><a href="#" class="navbar-link">Skills</a></li>
+              <li><a href="#" class="navbar-link">Time</a></li>
+              <li><a href="#" class="navbar-link">Pricing</a></li>
+              <li><a href="#" class="navbar-link">Blog</a></li>
+              <li><a href="#" class="navbar-link">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- The button to Toggle -->
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggle>
+            <!--This spans the line for our hamburger button  -->
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+        </div>
+      </header>
+      <!-- END OF HEADER -->
 
     <!-- START OF MAIN TAG-->
     <main>
@@ -72,7 +68,7 @@
             <section class="section hero" id="home" aria-label="hero">
                 <div class="container">
                     <!-- This is a figure element for our image -->
-                    <figure class="hero-banner img-holder has before" style="width: 640; height:840;">
+                    <figure class="hero-banner img-holder has before" style="--width: 640; --height:840;">
                         <!-- This is our image banner -->
                         <img src="img/banner6.jpg" width="640" height="840" alt="Sameer's Photo" class="img-cover">
                     </figure>
@@ -384,7 +380,7 @@
                   <div class="pricing-card">
                     <ion-icon name="qr-code" aria-hidden="true"></ion-icon>
   
-                    <h3 class="card-title">Brand Identity</h3>
+                    <h3 class="card-title">Business Analyst</h3>
   
                     <data class="card-price" value="200">$200</data>
                   </div>
@@ -394,7 +390,7 @@
                   <div class="pricing-card">
                     <ion-icon name="image" aria-hidden="true"></ion-icon>
   
-                    <h3 class="card-title">PSD Design</h3>
+                    <h3 class="card-title">Software Design</h3>
   
                     <data class="card-price" value="100">$100</data>
                   </div>
@@ -618,6 +614,58 @@
   
         </article>
     </main>
+    <!-- This is our Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- For the Copyright -->
+            <p class="copyright">
+                &copy; 2022. All Rights Reserved by
+                <a href="https://github.com/grayoj">Sameer</a>
+            </p>
+            <!-- Our Social Icons -->
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+
+
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Custom Javascript -->
+    <script src="./js/index.js" defre></script>
+
+    <!-- The Source from website Javascript -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
