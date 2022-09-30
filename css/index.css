@@ -1,0 +1,400 @@
+/* OUR STYLES
+Author: Sameer
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Our entire Color Scheme */
+:root {
+  --silver: hsl(0, 0%, 46%);
+  --gray: hsl(0, 0%, 60%);
+  --theme-color: hsl(10, 100%, 57%);
+  --light-gray: hsl(10, 0%, 80%);
+  --gray-x-11: hsl(0, 0%, 73%);
+  --dim-gray: hsl(0, 0%, 44%);
+  --cultured: hsl(0, 0%, 98%);
+  --black_10: hsl(0, 0%, 0%, 0.1);
+  --black_20: hsl(0, 0%, 0%, 0.2);
+  --black_30: hsl(0, 0%, 0%, 0.3);
+  --black_70: hsl(0, 0%, 0%, 0.7);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  /* Typography */
+  --ff-open-sans: "Open Sans", sans-serif;
+  /* Font Size */
+  --fs-35: 3.5rem;
+  --fs-30: 3rem;
+  --fs-25: 2.5rem;
+  --fs-18: 1.8rem;
+  --fs-17: 1.7rem;
+  --fs-13: 1.3rem;
+  /* Font Weight */
+  --fw-800: 800;
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+  --fw-400: 400;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 80px;
+
+  /**
+   * shadow
+   */
+
+  --shadow: 0 0 20px hsla(0, 0%, 0%, 0.08);
+
+  /**
+   * radius
+   */
+
+  --radius-10: 10px;
+  --radius-8: 8px;
+
+  /**
+   * transition
+   */
+
+  --transition: 0.25s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/* Links Input and Body */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+span,
+input,
+button,
+textarea,
+ion-icon { display: block; }
+
+img { height: auto; }
+
+input,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+textarea { width: 100%; }
+
+button { cursor: pointer; }
+
+ion-icon { pointer-events: none; }
+
+address { font-style: normal; }
+
+html {
+  font-family: var(--ff-open-sans);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--silver);
+  font-size: 1.6rem;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
+
+:focus-visible { outline-offset: 4px; }
+
+::placeholder { color: var(--dim-gray); }
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 2px;
+}
+
+body::-webkit-scrollbar-track { background-color: var(--white); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--spanish-gray);
+  border: 3px solid var(--white);
+  border-radius: 50px;
+}
+
+/*
+Styles that will be reused
+*/
+
+.container {
+    padding-inline: 30px;
+  }
+  
+  .section {
+    padding-block: var(--section-padding);
+  }
+  
+  .img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--light-gray);
+    overflow: hidden;
+  }
+  
+  .has-before {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .has-before:before {
+    position: absolute;
+    content: "";
+  }
+  
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .section-subtitle {
+    color: var(--theme-color);
+    font-family: var(--ff-open-sans);
+    font-weight: var(--fw--500);
+    margin-block-end: 6px;
+  }
+  
+  .h1,
+  .h2,
+  .h3 {
+    color: var(--black);
+    font-family: var(--ff-open-sans);
+  }
+  
+  .h1 {
+    font-size: var(--fs-30);
+  }
+  
+  .h1,
+  .h2 {
+    font-weight: var(--fw-800);
+    text-transform: uppercase;
+  }
+  
+  .h2 {
+    font-size: var(--fs-25);
+    line-height: 1.2;
+  }
+  
+  .h1,
+  .h3 {
+    line-height: 1.4;
+  }
+  
+  .h3 {
+    font-size: var(--fs-18);
+  }
+  .section-title {
+    margin-block-end: 40px;
+  }
+  
+  :is(.portfolio, .news) .section-title {
+    margin-block-end: 60px;
+  }
+  
+  .card {
+    /* The relative property maintains the card original position */
+    position: relative;
+    /* Hides the overflow of X and Y */
+    overflow: hidden;
+    /* Adds the border radius to the card from the root defined pseudoclass*/
+    border-radius: var(--radius-10);
+  }
+  
+  .card-content {
+    /* Gives the content of the card within an absolute position */
+    position: absolute;
+    /* Specify positioning, left, right, top and bottom*/
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    /* Apply color to card content background */
+    background-color: var(--white);
+    border-radius: var(--radius-8);
+    /* Apply padding */
+    padding: 28px 25px;
+    /* Ensure the card content is displayed within a grid */
+    display: grid;
+    /* Position items at the end of the container */
+    align-content: flex-end;
+    /* 0 means completely transparent, while 1 means no transparency */
+    opacity: 0;
+    /* Add a transition element to the card content*/
+    transition: var(--transition);
+  }
+  
+  /* The :is is a pseudo class function that takes a selector list as its
+  argument and selects any element that can be selected by one of the
+  selectors in that list  */
+  .card:is(:hover, :focus-within, :active) .card-content {
+    opacity: 1;
+  }
+  
+  /* the > is used to select the element within a different parent  */
+  .card-content > ion-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--black);
+    font-size: 40px;
+    /* Rotate content by 45 degrees */
+    transform: rotate(-45deg);
+  }
+  
+  /* Font for the Card Text */
+  .card-text {
+    font-family: var(--ff-open-sans);
+  }
+  
+  .has-scrollbar {
+    /* Display Properties Horizontally */
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-block-end: 30px;
+    margin-block-end: -15px;
+    /* Sets how strictly snap points are enforced
+    on the scroll container in case there is one. */
+    scroll-snap-type: inline mandatory;
+  }
+  
+  .scrollbar-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+  
+  /* For Scroll Bar Tracks */
+  .has-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--black_20);
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--black_70);
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: calc(25% - 25px);
+  }
+  
+  /* START OF HEADER */
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    /* Add padding block */
+    padding-block: 15px;
+    border-block-end: 1px solid var(--black_10);
+    /* Allow elemet cover another property */
+    z-index: 4;
+  }
+  
+  .header > .container {
+      /* Display ites horizontally */
+      display: flex;
+      /* Justify Content */
+      justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* Style the name of our logo */
+  .logo {
+    color: var(--black);
+    font-family: var(--ff-open-sans);
+    font-size: 3.2rem;
+    line-height: 0.9;
+    font-weight: var(--fw-700);
+  }
+  
+  /* Nav Tohggle Button */
+  .nav-toggle-btn .line {
+    width: 30px;
+    height: 2px;
+    background-color: var(--black);
+    transition: var(--transition);
+  }
+  
+  /* :not represents elements that do not match a list of selectors */
+  .nav-toggle-btn .line:not(:last-child) {
+    margin-block-end: 8px;
+  }
+  
+  /* For Line 1 */
+  .nav-toggle-btn.active .line-1 {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  /* For Line 2, translate X to give a cross */
+  .nav-toggle-btn.active .line-2 {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  /* For Line 2, translate Y to give a cross */
+  .nav-toggle-btn.active .line-3 {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  /*For the navbar <nav> */
+  .navbar {
+    position: absolute;
+    /* Add 100% to 1px to obtain the top of the navbar so 
+    the position is even */
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding-inline: 30px;
+    max-height: 0;
+    /* hide the overflow */
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.3s var(--cubic-out);
+  }
+  
+  /* Add for active section when scrolled */
+  .navbar.active {
+    max-height: 250px;
+    visibility: visible;
+    transition-duration: 0.5s;
+  }
+  
+  /* Put lists in navbar within a block */
+  .navbar-list {
+    margin-block: 25px;
+  }
+  
+  /* Style the links */
+  .navbar-link {
+    color: var(--black);
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-500);
+  }
