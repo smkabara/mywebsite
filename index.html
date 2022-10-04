@@ -28,8 +28,7 @@
 
 <body>
     <!-- This tells the browser that the content here is a header -->
-       <!-- This tells the browser that the content here is a header -->
-       <header class="header" data-header>
+    <header class="header" data-header>
         <!-- This will wrap our navigation bar -->
         <div class="container">
           <!-- This is for our logo -->
@@ -40,8 +39,8 @@
             <ul class="navbar-list">
               <!-- These are all our navbar links -->
               <li><a href="#" class="navbar-link">Home</a></li>
-              <li><a href="#" class="navbar-link">Portfolio</a></li>
-              <li><a href="#" class="navbar-link">Skills</a></li>
+              <li><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+              <li><a href="#skills" class="navbar-link">Skills</a></li>
               <li><a href="#" class="navbar-link">Time</a></li>
               <li><a href="#" class="navbar-link">Pricing</a></li>
               <li><a href="#" class="navbar-link">Blog</a></li>
@@ -49,7 +48,7 @@
             </ul>
           </nav>
           <!-- The button to Toggle -->
-          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggle>
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
             <!--This spans the line for our hamburger button  -->
             <span class="line line-1"></span>
             <span class="line line-2"></span>
@@ -63,180 +62,207 @@
     <main>
         <!-- represents a unique portion of the document within the main tag -->
         <article>
+<!-- HERO -->
+<section class="section hero" id="home" aria-label="hero">
+    <!-- Comtainer for hero -->
+    <div class="container">
+      <!-- This is a figure element for our image -->
+      <figure
+        class="hero-banner img-holder has-before"
+        style="--width: 640; --height: 840"
+      >
+        <!-- This is our image banner -->
+        <img
+          src="img/banner.jpg"
+          width="640"
+          height="840"
+          alt="Gerald's Photo"
+          class="img-cover"
+        />
+      </figure>
 
-            <!-- HERO -->
-            <section class="section hero" id="home" aria-label="hero">
-                <div class="container">
-                    <!-- This is a figure element for our image -->
-                    <figure class="hero-banner img-holder has before" style="--width: 640; --height:840;">
-                        <!-- This is our image banner -->
-                        <img src="img/banner6.jpg" width="640" height="840" alt="Sameer's Photo" class="img-cover">
-                    </figure>
-                    <!-- This is div for hero content -->
-                    <div class="hero-content">
-                        <p class="section-subtitle">Sameer M. Kabara</p>
-                        <h1 class="h1 hero-title">Software and ML Engineering</h1>
+      <!-- This is div for hero content -->
+      <div class="hero-content">
+        <p class="section-subtitle">Sameer M Kabara</p>
+        <h1 class="h1 hero-title">Software and ML Engineer</h1>
+        <!-- HERO LIST -->
+        <ul class="hero-list">
+          <!-- LISTS -->
+          <li>
+            <a href="#" class="list-link">
+              <span class="span"> Backend Development </span>
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </li>
+          <!-- LISTS -->
+          <li>
+            <a href="#" class="list-link">
+              <span class="span"> Frontend Development </span>
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </li>
+          <!-- LISTS -->
+          <li>
+            <a href="#" class="list-link">
+              <span class="span"> Figma Design </span>
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
 
-                        <ul class="hero-list">
-                            <!-- LIST -->
-                            <li>
-                                <a href="#" class="list-link">
-                                    <span class="span">
-                                        Backend Development
-                                    </span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-
-                            <!-- LIST -->
-                            <li>
-                                <a href="#" class="list-link">
-                                    <span class="span">
-                                        Backend Development
-                                    </span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-
-                            <!-- LIST -->
-                            <li>
-                                <a href="#" class="list-link">
-                                    <span class="span">
-                                        Software Project Management
-                                    </span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-
-                            <!-- LIST -->
-                            <li>
-                                <a href="#" class="list-link">
-                                    <span class="span">
-                                        QUality Assurance and Testing
-                                    </span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- FOR EXPERIENCE LIST -->
-                        <ul class="experience">
-                            <!-- FOR List Items -->
-                            <li class="list-item">
-                                <strong class="strong">5+</strong>
-                                <span class="span">
-                                    years of<br />
-                                    Experience
-                                </span>
-
-                            </li>
-
-                            <!-- FOR List Items -->
-                            <li class="list-item">
-                                <strong class="strong">15+</strong>
-                                <span class="span">
-                                    Satisfied<br />
-                                    Clients
-                                </span>
-
-                            </li>
-
-
-                            <!-- End of list itenms -->
-                        </ul>
-
-                        <!-- Scroll Down Button -->
-                        <a href="#" class="slide-down-btn" aria-label="scroll-down">
-                            <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
-
-                        </a>
-                    </div>
-            </section>
-            <!-- END OF THIS HERO SECTION -->
+        <!-- FOR EXPERIENCE LIST -->
+        <ul class="experience">
+          <!-- For List Items -->
+          <li class="list-item">
+            <strong class="strong">5+</strong>
+            <span class="span">
+              Years of<br />
+              Experience
+            </span>
+          </li>
+          <!-- For List Items -->
+          <li class="list-item">
+            <strong class="strong">15+</strong>
+            <span class="span">
+              Satisfied<br />
+              Clients
+            </span>
+          </li>
+          <!-- End of List Items -->
+        </ul>
+        <!-- Scroll Down Button -->
+        <a href="#" class="slide-down-btn" aria-label="scroll-down">
+          <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END OF THIS HERO SECTION -->
 
 
             <!-- The Portfolio Section -->
-            <section class="section portfolio" id="portfolio" aria-label="portfolio">
-                <!-- This is the container for our portfolio section -->
+        <section
+        class="section portfolio"
+        id="portfolio"
+        aria-label="portfolio"
+      >
+        <!-- This is the container for our portfolio section -->
+        <div class="container">
+          <!-- This is the paragraph section -->
+          <p class="section-subtitle">Portfolio</p>
+          <!-- This is the header section-->
+          <h2 class="h2 section-title">Selected Works</h2>
+          <!-- This is the static scrollbar -->
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <!-- These are our cards -->
+              <div class="card">
+                <!-- Figure inside in class -->
+                <figure
+                  class="card-banner img-holder"
+                  style="width: 600; height: 675"
+                >
+                  <!-- For Image in Figure -->
+                  <img
+                    src="img/banner4.JPG"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Portfolio 1"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <!-- These are our cards -->
+              <div class="card">
+                <!-- Figure inside in class -->
+                <figure
+                  class="card-banner img-holder"
+                  style="width: 600; height: 675"
+                >
+                  <!-- For Image in Figure -->
+                  <img
+                    src="img/banner3.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Portfolio 1"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <!-- These are our cards -->
+              <div class="card">
+                <!-- Figure inside in class -->
+                <figure
+                  class="card-banner img-holder"
+                  style="width: 600; height: 675"
+                >
+                  <!-- For Image in Figure -->
+                  <img
+                    src="img/banner.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Portfolio 1"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <!-- These are our cards -->
+              <div class="card">
+                <!-- Figure inside in class -->
+                <figure
+                  class="card-banner img-holder"
+                  style="width: 600; height: 675"
+                >
+                  <!-- For Image in Figure -->
+                  <img
+                    src="img/banner2.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Portfolio 1"
+                  />
+                </figure>
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <!-- These are our cards -->
+              <div class="card">
+                <!-- Figure inside in class -->
+                <figure
+                  class="card-banner img-holder"
+                  style="width: 600; height: 675"
+                >
+                  <!-- For Image in Figure -->
+                  <img
+                    src="img/banner1.jpg"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="Portfolio 1"
+                  />
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- END OF PORTFOLIO -->
 
-                <div class="container">
-                    <p class="section-subtitle">Portfolio</p>
-                    <!-- This is the section header -->
-                    <h2 class="h2 section-title">Selected Works</h2>
-                    <!-- This is the static scrollbar -->
-                    <ul class="has scrollbar">
-                        <li class="scrollbar-item">
-                            <!-- These are our cards -->
-                            <div class="card">
-
-                                <!-- figure inside in class -->
-
-                                <figure class="card-banner img-holder" style="width:600; height: 675;">
-                                    <!-- For Image in figure -->
-                                    <img src="img/sk1.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 1" />
-                                </figure>
-                            </div>
-                        </li>
-
-                        <!-- These are our cards -->
-                        <div class="card">
-
-                            <!-- figure inside in class -->
-
-                            <figure class="card-banner img-holder" style="width:600; height: 675;">
-                                <!-- For Image in figure -->
-                                <img src="img/sk2.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 2" />
-                            </figure>
-                        </div>
-                        </li> <!-- These are our cards -->
-                        <div class="card">
-
-                            <!-- figure inside in class -->
-
-                            <figure class="card-banner img-holder" style="width:600; height: 675;">
-                                <!-- For Image in figure -->
-                                <img src="img/sk3.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 3" />
-                            </figure>
-                        </div>
-                        </li> <!-- These are our cards -->
-                        <div class="card">
-
-                            <!-- figure inside in class -->
-
-                            <figure class="card-banner img-holder" style="width:600; height: 675;">
-                                <!-- For Image in figure -->
-                                <img src="img/sk4.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 4" />
-                            </figure>
-                        </div>
-                        </li> <!-- These are our cards -->
-                        <div class="card">
-
-                            <!-- figure inside in class -->
-
-                            <figure class="card-banner img-holder" style="width:600; height: 675;">
-                                <!-- For Image in figure -->
-                                <img src="img/5.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 5" />
-                            </figure>
-                        </div>
-                        </li> <!-- These are our cards -->
-                        <div class="card">
-
-                            <!-- figure inside in class -->
-
-                            <figure class="card-banner img-holder" style="width:600; height: 675;">
-                                <!-- For Image in figure -->
-                                <img src="img/6.jpg" width="600" heihgt="600" loading="lazy" alt="portfolio 6" />
-                            </figure>
-                        </div>
-                        </li>
-
-
-
-                </div>
-                </li>
-                </ul>
-                </div>
-            </section>
-            <!-- END OF PORTFOLIO -->
 
             <!-- START OF SKILLS -->
             <section class="section skills has-before" id="skills" aria-label="skills"
@@ -415,7 +441,7 @@
                       style="--width: 600; --height: 675"
                     >
                       <img
-                        src="./assets/images/blog-1.jpg"
+                        src="./img/skill3.jpg"
                         width="600"
                         height="675"
                         loading="lazy"
@@ -448,7 +474,7 @@
                       style="--width: 600; --height: 675"
                     >
                       <img
-                        src="./assets/images/blog-2.jpg"
+                        src="./img/skill3.jpg"
                         width="600"
                         height="675"
                         loading="lazy"
@@ -481,7 +507,7 @@
                       style="--width: 600; --height: 675"
                     >
                       <img
-                        src="./assets/images/blog-3.jpg"
+                        src="./skills.jpg"
                         width="600"
                         height="675"
                         loading="lazy"
@@ -514,7 +540,7 @@
                       style="--width: 600; --height: 675"
                     >
                       <img
-                        src="./assets/images/blog-4.jpg"
+                        src="./skill4.jpg"
                         width="600"
                         height="675"
                         loading="lazy"
